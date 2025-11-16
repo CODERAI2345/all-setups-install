@@ -1,3 +1,8 @@
+for windows command mode use these commands 
+
+icacls new.aws.pem /inheritance:r
+icacls new.aws.pem /grant:r %USERNAME%:R
+
 sudo yum update –y
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
